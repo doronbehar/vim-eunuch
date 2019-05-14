@@ -74,23 +74,6 @@ COMMANDS                                        *eunuch-commands*
                         list.  Jump to the first result unless ! is given.
 
                                                 *eunuch-:SudoEdit*
-:SudoEdit [file]        Edit a file using sudo.  This overrides any read
-                        permission issues, plus allows you to write the file
-                        with :w!.
-
-                                                *eunuch-:SudoWrite*
-:SudoWrite              Use sudo to write the file to disk.  Handy when you
-                        forgot to use sudo to invoke Vim.  This uses :SudoEdit
-                        internally, so after the first invocation you can
-                        subsequently use :w!.
-
-                                                *eunuch-:Wall* *eunuch-:W*
-:Wall                   Like |:wall|, but for windows rather than buffers.
-:W                      It also writes files that haven't changed, which is
-                        useful for kicking off build and test suites (such as
-                        with watchr or guard).  Furthermore, it handily
-                        doubles as a safe fallback for people who, like me,
-                        accidentally type :W instead of :w a lot.
 
 ABOUT                                           *eunuch-about*
 
